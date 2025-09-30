@@ -1,0 +1,5 @@
+pydantic
+google-generativeai
+pandas
+matplotlib
+numpy
