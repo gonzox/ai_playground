@@ -1,0 +1,16 @@
+Incomplete answer similarity: 0.5
+Safety violations similarity: 0.85
+Unrealistic tools similarity: 0.6
+Overcomplicated solution similarity: 0.6
+Missing context similarity: 0.75
+Poor quality tips similarity: 0.9
+--------------------------------
+Incomplete answer similarity: 0.55
+Safety violations similarity: 0.85
+Unrealistic tools similarity: 0.8
+Overcomplicated solution similarity: 0.75
+Missing context similarity: 0.75
+Poor quality tips similarity: 0.9
+--------------------------------
+First pass similarity: 0.7000000000000001
+Second pass similarity: 0.7666666666666666

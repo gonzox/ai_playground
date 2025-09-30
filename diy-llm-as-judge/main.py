@@ -176,14 +176,14 @@ def evaluate_questions(questions: List[RepairQuesion], prompt:str):
     """
     labeled_questions = []
     model = get_model()
+    questions_str = json.dumps(questions)
+    labeled_question = model.generate_content(prompt.format(QUESTIONS=questions_str))
+    result=labeled_question.text.strip().removeprefix("```json").removesuffix("```").strip()
+    #print("result: ", result)
+    labeled_output = json.loads(result)
 
-    for qa in questions:
-        labeled_question = model.generate_content(prompt.format(QUESTION=qa))
-        result=labeled_question.text.strip().removeprefix("```json").removesuffix("```").strip()
-        labeled_output = json.loads(result)
-        labeled_questions.append(labeled_output)
     
-    return labeled_questions
+    return labeled_output
 
 # creates a heatmap of evals based on the categories of evaluations
 def visualize_evals(evals: pd.DataFrame):
@@ -219,7 +219,7 @@ questions = json.load(open('data/generated-questions.json'))
 
 # human evaluations
 human_evals = json.load(open('data/human-evals.json'))
-visualize_evals(to_dataframe(human_evals))
+#visualize_evals(to_dataframe(human_evals))
 
 # seems to be some correlation between overcomplicated solution and unrealistic tools
 
@@ -233,20 +233,23 @@ Overcomplicated Solution (overcomplicated_solution),
 Missing Context (missing_context),
 Poor Quality Tips (poor_quality_tips). with 1 or 0 if you think that the failure applies or not respectively.
 
-question item is {QUESTION} and it's a json where 'question' is the question and everything else is related to the answer
+questions are a json array: {QUESTIONS} 
 
-return it as valid JSON
+and each question is a json object where 'question' is the question and everything else is related to the answer
+
+IMPORTANT: Return ONLY valid JSON format using double quotes (") for all strings, not single quotes ('). 
 """
 
 # evaluate questions
-first_pass_labeled_questions = evaluate_questions(questions, first_pass_prompt)
+
 # save first pass labeled questions to a json file if not already there
 if not os.path.exists('data/first-pass.json'):
+    first_pass_labeled_questions = evaluate_questions(questions, first_pass_prompt)
     with open('data/first-pass.json', 'w') as f:
         json.dump(first_pass_labeled_questions, f, indent=4)
 
 # visualize evals
-visualize_evals(to_dataframe(first_pass_labeled_questions))
+#visualize_evals(to_dataframe(first_pass_labeled_questions))
 
 # load first pass labeled questions
 second_pass_prompt = """
@@ -264,19 +267,22 @@ Overcomplicated Solution (overcomplicated_solution),
 Missing Context (missing_context),
 Poor Quality Tips (poor_quality_tips). with 1 or 0 if you think that the failure applies or not respectively.
 
-be very strict on the unrealistic tools and overcomplicated solution. and incomplete answers. this is for inexperienced people at home.
+be very strict on the unrealistic tools and overcomplicated solution, and incomplete answers. this is for inexperienced people at home.
+And answer is incomplete if an inexperienced user can have follow up questions about the answer no matter how basic they are. Also make sure you analize the question with not that strictly to make sure are complete answers for inexperienced users.
 
-question item is {QUESTION} and it's a json where 'question' is the question and everything else is related to the answer
+Also over complicated solution is when the answer is too complex for an inexperienced user to follow despite how minimum or basic it appears.
 
-return it as valid JSON
+questions are a json array: {QUESTIONS} 
+
+and each question is a json object where 'question' is the question and everything else is related to the answer
+
+IMPORTANT: Return ONLY valid JSON format using double quotes (") for all strings, not single quotes ('). 
 """
 
 # evaluate questions
-second_pass_labeled_questions = evaluate_questions(questions, second_pass_prompt)
-print(json.dumps(second_pass_labeled_questions, indent=4))
-
 # save second pass labeled questions to a json file
 if not os.path.exists('data/second-pass.json'):
+    second_pass_labeled_questions = evaluate_questions(questions, second_pass_prompt)
     with open('data/second-pass.json', 'w') as f:
         json.dump(second_pass_labeled_questions, f, indent=4)
 
@@ -299,26 +305,34 @@ def evaluate_similarity(human_evals, labeled_questions):
     missing_context_similarity = 0
     poor_quality_tips_similarity = 0
     for q in range(0, len(human_evals)-1):
-        if human_evals[q]['incomplete_answer'] == labeled_questions[q]['incomplete_answer']:
-            first_pass_incomplete_answer_similarity += 1
-        if human_evals[q]['safety_violations'] == labeled_questions[q]['safety_violations']:
-            first_pass_safety_violations_similarity += 1
-        if human_evals[q]['unrealistic_tools'] == labeled_questions[q]['unrealistic_tools']:
-            first_pass_unrealistic_tools_similarity += 1
-        if human_evals[q]['overcomplicated_solution'] == labeled_questions[q]['overcomplicated_solution']:
-            first_pass_overcomplicated_solution_similarity += 1
-        if human_evals[q]['missing_context'] == labeled_questions[q]['missing_context']:
-            first_pass_missing_context_similarity += 1
-        if human_evals[q]['poor_quality_tips'] == labeled_questions[q]['poor_quality_tips']:
-            first_pass_poor_quality_tips_similarity += 1
+        if int(human_evals[q]['incomplete_answer']) == labeled_questions[q]['incomplete_answer']:
+            incomplete_answer_similarity += 1
+        if int(human_evals[q]['safety_violations']) == labeled_questions[q]['safety_violations']:
+            safety_violations_similarity += 1
+        if int(human_evals[q]['unrealistic_tools']) == labeled_questions[q]['unrealistic_tools']:
+            unrealistic_tools_similarity += 1
+        if int(human_evals[q]['overcomplicated_solution']) == labeled_questions[q]['overcomplicated_solution']:
+            overcomplicated_solution_similarity += 1
+        if int(human_evals[q]['missing_context']) == labeled_questions[q]['missing_context']:
+            missing_context_similarity += 1
+        if int(human_evals[q]['poor_quality_tips']) == labeled_questions[q]['poor_quality_tips']:
+            poor_quality_tips_similarity += 1
+
+    print(f"Incomplete answer similarity: {incomplete_answer_similarity / len(human_evals)}")
+    print(f"Safety violations similarity: {safety_violations_similarity / len(human_evals)}")
+    print(f"Unrealistic tools similarity: {unrealistic_tools_similarity / len(human_evals)}")
+    print(f"Overcomplicated solution similarity: {overcomplicated_solution_similarity / len(human_evals)}")
+    print(f"Missing context similarity: {missing_context_similarity / len(human_evals)}")
+    print(f"Poor quality tips similarity: {poor_quality_tips_similarity / len(human_evals)}")
 
     return (incomplete_answer_similarity + safety_violations_similarity + unrealistic_tools_similarity + overcomplicated_solution_similarity + missing_context_similarity + poor_quality_tips_similarity) / len(human_evals)
 
 # use human evals as ground truth and compare the similarities for each question and each field and comput a percentage of similarity in total based on hit or miss
 # compute the percentage of similarity in total based on hit or miss
 first_pass_similarity = evaluate_similarity(human_evals, first_pass_labeled_questions)
+print("--------------------------------")
 second_pass_similarity = evaluate_similarity(human_evals, second_pass_labeled_questions)
-
-print(f"First pass similarity: {first_pass_similarity}")
-print(f"Second pass similarity: {second_pass_similarity}")
+print("--------------------------------")
+print(f"First pass similarity: {first_pass_similarity / 6}")
+print(f"Second pass similarity: {second_pass_similarity / 6}")
     

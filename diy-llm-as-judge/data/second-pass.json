@@ -1,545 +1,547 @@
-[{
-    "question": "Why isn't my garbage disposal working?",
-    "answer": "Most likely jammed or the reset button needs to be pressed.",
-    "equipment_problem": "Garbage disposal motor is humming or completely dead.",
-    "tools_required": [
-        "Garbage disposal wrench",
-        "Flashlight",
-        "Pliers",
-        "Screwdriver"
-    ],
-    "steps": [
-        "Turn off power at the breaker",
-        "Check for obstructions in the disposal chamber.",
-        "Use the wrench to manually rotate the motor shaft.",
-        "Press the reset button on the bottom of the unit.",
-        "Turn the breaker back on and test the disposal."
-    ],
-    "safety_info": "Always turn off the power at the breaker before working on the garbage disposal. Wear safety glasses.",
-    "tips": "Run cold water while operating the disposal. Avoid putting hard items down the disposal.",
-    "category": "appliance_repair",
-    "incomplete_answer": 1,
-    "safety_violations": 0,
-    "unrealistic_tools": 0,
-    "overcomplicated_solution": 0,
-    "missing_context": 0,
-    "poor_quality_tips": 0
-},
-{
-    "question": "How do I unclog a slow-draining sink?",
-    "answer": "Often a hair clog in the P-trap. Can be cleared with a plunger or by cleaning the P-trap.",
-    "equipment_problem": "Sink draining slowly or not at all.",
-    "tools_required": [
-        "Plunger",
-        "Bucket",
-        "Adjustable wrench",
-        "Pliers",
-        "Drain snake (optional)"
-    ],
-    "steps": [
-        "Place a bucket under the P-trap.",
-        "Loosen the slip nuts on the P-trap and remove it.",
-        "Clean out any debris in the P-trap.",
-        "Reassemble the P-trap.",
-        "If the clog persists, use a drain snake to clear the drainpipe."
-    ],
-    "safety_info": "Wear gloves to protect your hands. Be careful when handling drain cleaner.",
-    "tips": "Avoid pouring grease down the drain.",
-    "category": "plumbing_repair",
-    "incomplete_answer": 0,
-    "safety_violations": 0,
-    "unrealistic_tools": 0,
-    "overcomplicated_solution": 0,
-    "missing_context": 0,
-    "poor_quality_tips": 0
-},
-{
-    "question": "A light switch isn't working. What do I do?",
-    "answer": "Could be a loose wire, a faulty switch, or a tripped breaker.",
-    "equipment_problem": "Light switch does not turn the light on or off.",
-    "tools_required": [
-        "Screwdriver",
-        "Voltage tester",
-        "Wire strippers",
-        "Wire connectors",
-        "New light switch (if necessary)"
-    ],
-    "steps": [
-        "Turn off the power at the breaker.",
-        "Remove the light switch cover plate.",
-        "Use a voltage tester to ensure the power is off.",
-        "Disconnect the wires from the old switch.",
-        "Connect the wires to the new switch, matching the wiring configuration.",
-        "Reinstall the switch and cover plate.",
-        "Turn the breaker back on and test the switch."
-    ],
-    "safety_info": "Always turn off the power at the breaker before working on electrical components. Use a voltage tester to verify the power is off.",
-    "tips": "Take a picture of the wiring before disconnecting the old switch.",
-    "category": "electrical_repair",
-    "incomplete_answer": 1,
-    "safety_violations": 0,
-    "unrealistic_tools": 1,
-    "overcomplicated_solution": 1,
-    "missing_context": 1,
-    "poor_quality_tips": 0
-},
-{
-    "question": "How often should I change my furnace filter?",
-    "answer": "Every 1-3 months, depending on usage and filter type.",
-    "equipment_problem": "Reduced airflow from vents, increased energy bills.",
-    "tools_required": [
-        "New furnace filter"
-    ],
-    "steps": [
-        "Locate the furnace filter compartment.",
-        "Remove the old filter.",
-        "Insert the new filter, making sure the arrow indicates the direction of airflow.",
-        "Close the filter compartment."
-    ],
-    "safety_info": "Turn off the furnace before changing the filter.",
-    "tips": "Mark the date on the filter when you change it to keep track.",
-    "category": "hvac_maintenance",
-    "incomplete_answer": 0,
-    "safety_violations": 0,
-    "unrealistic_tools": 0,
-    "overcomplicated_solution": 0,
-    "missing_context": 0,
-    "poor_quality_tips": 0
-},
-{
-    "question": "How do I fix a hole in drywall?",
-    "answer": "Patch it with drywall compound or a patch kit.",
-    "equipment_problem": "Hole or crack in drywall.",
-    "tools_required": [
-        "Utility knife",
-        "Drywall knife",
-        "Drywall compound",
-        "Sandpaper",
-        "Primer",
-        "Paint",
-        "Drywall patch (optional)"
-    ],
-    "steps": [
-        "Clean the area around the hole.",
-        "If necessary, apply a drywall patch.",
-        "Apply drywall compound to the hole, feathering the edges.",
-        "Let the compound dry completely.",
-        "Sand the area smooth.",
-        "Prime the area.",
-        "Paint the area to match the surrounding wall."
-    ],
-    "safety_info": "Wear a dust mask when sanding.",
-    "tips": "Apply multiple thin coats of drywall compound for best results.",
-    "category": "general_home_repair",
-    "incomplete_answer": 1,
-    "safety_violations": 0,
-    "unrealistic_tools": 0,
-    "overcomplicated_solution": 0,
-    "missing_context": 0,
-    "poor_quality_tips": 0
-},
-{
-    "question": "My toilet is constantly running. What's the problem?",
-    "answer": "Most likely a faulty flapper or fill valve.",
-    "equipment_problem": "Toilet running constantly.",
-    "tools_required": [
-        "Adjustable wrench",
-        "Screwdriver",
-        "New flapper or fill valve (if necessary)"
-    ],
-    "steps": [
-        "Turn off the water supply to the toilet.",
-        "Inspect the flapper for damage or debris.",
-        "Replace the flapper if necessary.",
-        "If the flapper is not the problem, inspect the fill valve.",
-        "Replace the fill valve if necessary.",
-        "Turn the water supply back on and test the toilet."
-    ],
-    "safety_info": "Be careful not to overtighten connections.",
-    "tips": "Flush the toilet several times after making repairs to ensure proper operation.",
-    "category": "plumbing_repair",
-    "incomplete_answer": 1,
-    "safety_violations": 0,
-    "unrealistic_tools": 0,
-    "overcomplicated_solution": 0,
-    "missing_context": 0,
-    "poor_quality_tips": 0
-},
-{
-    "question": "Why are my outlets not working in one room?",
-    "answer": "Probably a tripped circuit breaker or a faulty GFCI outlet.",
-    "equipment_problem": "Outlets not providing power.",
-    "tools_required": [
-        "Voltage tester",
-        "Screwdriver",
-        "GFCI tester"
-    ],
-    "steps": [
-        "Check the circuit breaker panel for a tripped breaker. Reset the breaker if necessary.",
-        "Check for a GFCI outlet in the room or nearby. Press the reset button on the GFCI outlet.",
-        "If neither of those work, test the outlets with a voltage tester. If there's no power, call an electrician."
-    ],
-    "safety_info": "Always turn off the power at the breaker before working on electrical components. Use a voltage tester to verify the power is off.",
-    "tips": "A GFCI outlet often protects multiple outlets in a room.",
-    "category": "electrical_repair",
-    "incomplete_answer": 0,
-    "safety_violations": 0,
-    "unrealistic_tools": 1,
-    "overcomplicated_solution": 0,
-    "missing_context": 0,
-    "poor_quality_tips": 0
-},
-{
-    "question": "My refrigerator is not cooling properly. What could be wrong?",
-    "answer": "Dirty condenser coils, a faulty door seal, or a malfunctioning thermostat.",
-    "equipment_problem": "Refrigerator not maintaining a cold temperature.",
-    "tools_required": [
-        "Vacuum cleaner with brush attachment",
-        "Screwdriver",
-        "Ohm meter (optional)"
-    ],
-    "steps": [
-        "Clean the condenser coils (usually located on the back or bottom of the refrigerator).",
-        "Check the door seal for damage or gaps.",
-        "Test the thermostat with an ohm meter (if comfortable).",
-        "If none of these work, consult a professional.",
-        "Ensure nothing is blocking the vents inside the refrigerator."
-    ],
-    "safety_info": "Unplug the refrigerator before cleaning the condenser coils.",
-    "tips": "Clean the condenser coils every 6 months.",
-    "category": "appliance_repair",
-    "incomplete_answer": 1,
-    "safety_violations": 0,
-    "unrealistic_tools": 1,
-    "overcomplicated_solution": 1,
-    "missing_context": 0,
-    "poor_quality_tips": 0
-},
-{
-    "question": "How do I seal gaps around windows and doors?",
-    "answer": "Use caulk or weather stripping.",
-    "equipment_problem": "Drafts coming in around windows and doors.",
-    "tools_required": [
-        "Caulk gun",
-        "Caulk",
-        "Utility knife",
-        "Weather stripping"
-    ],
-    "steps": [
-        "Clean the area around the window or door frame.",
-        "Apply caulk to gaps and cracks.",
-        "Smooth the caulk with your finger or a tool.",
-        "Apply weather stripping to the edges of the door or window frame.",
-        "Ensure proper seal, no gaps."
-    ],
-    "safety_info": "Work in a well-ventilated area when using caulk.",
-    "tips": "Choose the right type of caulk for the job (e.g., exterior vs. interior).",
-    "category": "general_home_repair",
-    "incomplete_answer": 1,
-    "safety_violations": 0,
-    "unrealistic_tools": 0,
-    "overcomplicated_solution": 0,
-    "missing_context": 0,
-    "poor_quality_tips": 0
-},
-{
-    "question": "How can I improve my home's energy efficiency?",
-    "answer": "Insulate properly, seal air leaks, and use energy-efficient appliances.",
-    "equipment_problem": "High energy bills.",
-    "tools_required": [
-        "Caulk gun",
-        "Weather stripping",
-        "Insulation",
-        "Energy audit tools (optional)"
-    ],
-    "steps": [
-        "Insulate walls, attics, and crawl spaces.",
-        "Seal air leaks around windows and doors.",
-        "Upgrade to energy-efficient appliances.",
-        "Install a programmable thermostat.",
-        "Consider an energy audit to identify areas for improvement."
-    ],
-    "safety_info": "Wear protective gear when handling insulation.",
-    "tips": "Take advantage of energy efficiency rebates and incentives.",
-    "category": "hvac_maintenance",
-    "incomplete_answer": 1,
-    "safety_violations": 0,
-    "unrealistic_tools": 0,
-    "overcomplicated_solution": 0,
-    "missing_context": 0,
-    "poor_quality_tips": 0
-},
-{
-    "question": "My ceiling fan is wobbly. How can I fix it?",
-    "answer": "Tighten screws, balance the blades, and ensure the mounting bracket is secure.",
-    "equipment_problem": "Ceiling fan wobbling or shaking.",
-    "tools_required": [
-        "Screwdriver",
-        "Ladder",
-        "Balancing kit"
-    ],
-    "steps": [
-        "Turn off the power at the breaker.",
-        "Tighten all screws on the fan blades and the mounting bracket.",
-        "Use a balancing kit to balance the fan blades.",
-        "If the problem persists, check the mounting bracket for stability. Ensure it's screwed into a structural piece of the ceiling."
-    ],
-    "safety_info": "Make sure the power is off before working on the fan. Use a sturdy ladder.",
-    "tips": "Use a fan blade balancing kit for precise balancing.",
-    "category": "general_home_repair",
-    "incomplete_answer": 0,
-    "safety_violations": 0,
-    "unrealistic_tools": 0,
-    "overcomplicated_solution": 0,
-    "missing_context": 0,
-    "poor_quality_tips": 0
-},
-{
-    "question": "My washing machine is leaking. What should I check first?",
-    "answer": "Check the hoses and connections for leaks or damage.",
-    "equipment_problem": "Water leaking from washing machine during operation.",
-    "tools_required": [
-        "Pliers",
-        "Adjustable wrench",
-        "Bucket",
-        "New hoses (if needed)"
-    ],
-    "steps": [
-        "Turn off the water supply to the washing machine.",
-        "Check the hoses for cracks or leaks.",
-        "Tighten the hose connections.",
-        "If the hoses are damaged, replace them.",
-        "Inspect the drain hose for clogs or kinks.",
-        "Check the door seal for damage."
-    ],
-    "safety_info": "Disconnect the power to the washing machine before performing any repairs.",
-    "tips": "Replace washing machine hoses every 5 years.",
-    "category": "appliance_repair",
-    "incomplete_answer": 1,
-    "safety_violations": 0,
-    "unrealistic_tools": 0,
-    "overcomplicated_solution": 0,
-    "missing_context": 0,
-    "poor_quality_tips": 0
-},
-{
-    "question": "How do I fix a leaky faucet?",
-    "answer": "Often caused by worn-out washers or O-rings.",
-    "equipment_problem": "Faucet dripping water even when turned off.",
-    "tools_required": [
-        "Adjustable wrench",
-        "Screwdriver",
-        "Pliers",
-        "New washers and O-rings"
-    ],
-    "steps": [
-        "Turn off the water supply to the faucet.",
-        "Disassemble the faucet.",
-        "Identify the worn-out washers or O-rings.",
-        "Replace the worn parts.",
-        "Reassemble the faucet.",
-        "Turn the water supply back on and test the faucet."
-    ],
-    "safety_info": "Be careful not to scratch the faucet finish when using tools.",
-    "tips": "Take a picture of the faucet before disassembling it for easy reassembly.",
-    "category": "plumbing_repair",
-    "incomplete_answer": 1,
-    "safety_violations": 0,
-    "unrealistic_tools": 0,
-    "overcomplicated_solution": 0,
-    "missing_context": 1,
-    "poor_quality_tips": 0
-},
-{
-    "question": "How do I install a new light fixture?",
-    "answer": "Turn off the power, connect the wires correctly, and secure the fixture.",
-    "equipment_problem": "Replacing an old light fixture with a new one.",
-    "tools_required": [
-        "Screwdriver",
-        "Wire strippers",
-        "Wire connectors",
-        "Voltage tester",
-        "New light fixture"
-    ],
-    "steps": [
-        "Turn off the power at the breaker.",
-        "Remove the old light fixture.",
-        "Use a voltage tester to ensure the power is off.",
-        "Connect the wires from the new fixture to the wires in the ceiling box, matching the wiring configuration.",
-        "Secure the new fixture to the ceiling box.",
-        "Turn the breaker back on and test the fixture."
-    ],
-    "safety_info": "Always turn off the power at the breaker before working on electrical components. Use a voltage tester to verify the power is off.",
-    "tips": "Make sure the ceiling box is rated to support the weight of the new fixture.",
-    "category": "electrical_repair",
-    "incomplete_answer": 1,
-    "safety_violations": 0,
-    "unrealistic_tools": 0,
-    "overcomplicated_solution": 0,
-    "missing_context": 0,
-    "poor_quality_tips": 0
-},
-{
-    "question": "How do I clean window air conditioning unit coils?",
-    "answer": "Remove the front cover, vacuum the coils, and straighten bent fins.",
-    "equipment_problem": "Reduced cooling performance from air conditioner.",
-    "tools_required": [
-        "Screwdriver",
-        "Vacuum cleaner with brush attachment",
-        "Fin comb (optional)"
-    ],
-    "steps": [
-        "Unplug the air conditioner.",
-        "Remove the front cover.",
-        "Vacuum the coils to remove dust and debris.",
-        "Use a fin comb to straighten any bent fins.",
-        "Reassemble the air conditioner.",
-        "Allow coils to completely dry before plugging back in."
-    ],
-    "safety_info": "Unplug the air conditioner before cleaning.",
-    "tips": "Clean the coils at least once a year.",
-    "category": "hvac_maintenance",
-    "incomplete_answer": 1,
-    "safety_violations": 0,
-    "unrealistic_tools": 0,
-    "overcomplicated_solution": 0,
-    "missing_context": 0,
-    "poor_quality_tips": 0
-},
-{
-    "question": "How to fix a squeaky door hinge?",
-    "answer": "Apply lubricant such as WD-40 or petroleum jelly to the hinge.",
-    "equipment_problem": "Door hinge squeaking when opening or closing the door.",
-    "tools_required": [
-        "Lubricant (WD-40, petroleum jelly, or silicone spray)",
-        "Cloth or paper towel"
-    ],
-    "steps": [
-        "Open and close the door to identify the squeaky hinge.",
-        "Apply lubricant to the hinge pin and between the hinge leaves.",
-        "Work the door back and forth to distribute the lubricant.",
-        "Wipe off any excess lubricant.",
-        "If squeak persists, try removing the hinge pin and applying lubricant directly to it before reinserting it."
-    ],
-    "safety_info": "Avoid getting lubricant on the floor, as it can be slippery.",
-    "tips": "Use a lubricant with a Teflon additive for longer-lasting results.",
-    "category": "general_home_repair",
-    "incomplete_answer": 0,
-    "safety_violations": 0,
-    "unrealistic_tools": 0,
-    "overcomplicated_solution": 0,
-    "missing_context": 0,
-    "poor_quality_tips": 0
-},
-{
-    "question": "My oven isn't heating up. What could be the issue?",
-    "answer": "Could be a faulty heating element, igniter (gas oven), or thermostat.",
-    "equipment_problem": "Oven not reaching the set temperature.",
-    "tools_required": [
-        "Screwdriver",
-        "Multimeter",
-        "Ohm meter (optional)",
-        "Replacement heating element or igniter (if necessary)"
-    ],
-    "steps": [
-        "Check the heating element for visible damage.",
-        "Test the heating element with a multimeter to check for continuity.",
-        "If it's a gas oven, check the igniter to see if it's glowing during startup.",
-        "If not glowing, test the igniter with a multimeter.",
-        "Check the thermostat for proper function (more complex, may require professional assistance)."
-    ],
-    "safety_info": "Unplug the oven before performing any repairs. Disconnect the gas supply if working on a gas oven.",
-    "tips": "Consult a repair manual or online resources for specific instructions for your oven model.",
-    "category": "appliance_repair",
-    "incomplete_answer": 1,
-    "safety_violations": 0,
-    "unrealistic_tools": 1,
-    "overcomplicated_solution": 1,
-    "missing_context": 0,
-    "poor_quality_tips": 0
-},
-{
-    "question": "How do I thaw frozen pipes?",
-    "answer": "Use a hair dryer or heat lamp, starting near the faucet and working back toward the frozen area.",
-    "equipment_problem": "Frozen pipes, resulting in no water flow.",
-    "tools_required": [
-        "Hair dryer or heat lamp",
-        "Towels or rags"
-    ],
-    "steps": [
-        "Open the faucet to allow water to flow as the ice melts.",
-        "Apply heat to the pipe, starting near the faucet and working back toward the frozen area.",
-        "Continue applying heat until water flows freely.",
-        "Wrap the pipes with insulation to prevent future freezing.",
-        "Monitor for leaks after thawing."
-    ],
-    "safety_info": "Never use an open flame to thaw pipes. Be careful not to overheat the pipes, which could cause them to burst.",
-    "tips": "Keep the faucet open slightly during extremely cold weather to prevent freezing.",
-    "category": "plumbing_repair",
-    "incomplete_answer": 0,
-    "safety_violations": 0,
-    "unrealistic_tools": 0,
-    "overcomplicated_solution": 0,
-    "missing_context": 0,
-    "poor_quality_tips": 0
-},
-{
-    "question": "Why is one of my wall outlets warm to the touch?",
-    "answer": "Could be a loose connection or overloaded circuit.",
-    "equipment_problem": "Wall outlet feels warm or hot to the touch.",
-    "tools_required": [
-        "Screwdriver",
-        "Voltage tester",
-        "Wire strippers",
-        "Wire connectors"
-    ],
-    "steps": [
-        "Turn off the power at the breaker.",
-        "Remove the outlet cover plate.",
-        "Use a voltage tester to ensure the power is off.",
-        "Inspect the wiring connections for looseness or damage.",
-        "Tighten or replace any loose or damaged connections.",
-        "Check the wiring for any signs of overheating.",
-        "Reinstall the outlet and cover plate.",
-        "Turn the breaker back on and test the outlet.",
-        "If the problem persists, call an electrician."
-    ],
-    "safety_info": "Always turn off the power at the breaker before working on electrical components. Use a voltage tester to verify the power is off. If you're not comfortable working with electricity, call an electrician.",
-    "tips": "Avoid overloading circuits by plugging too many devices into one outlet or circuit.",
-    "category": "electrical_repair",
-    "incomplete_answer": 1,
-    "safety_violations": 0,
-    "unrealistic_tools": 1,
-    "overcomplicated_solution": 1,
-    "missing_context": 0,
-    "poor_quality_tips": 0
-},
-{
-    "question": "How can I clean my window A/C filter?",
-    "answer": "Remove the filter, vacuum it, and wash it with mild soap and water.",
-    "equipment_problem": "Reduced airflow from window AC unit.",
-    "tools_required": [
-        "Vacuum cleaner with brush attachment",
-        "Mild soap",
-        "Water",
-        "Soft brush (optional)"
-    ],
-    "steps": [
-        "Turn off and unplug the air conditioner.",
-        "Remove the filter from the unit.",
-        "Vacuum the filter to remove loose dust and debris.",
-        "Wash the filter with mild soap and water.",
-        "Rinse the filter thoroughly.",
-        "Allow the filter to dry completely before reinstalling it.",
-        "Plug the unit back in."
-    ],
-    "safety_info": "Ensure the filter is completely dry before reinstalling it.",
-    "tips": "Clean the filter every 2-4 weeks during periods of heavy use.",
-    "category": "hvac_maintenance",
-    "incomplete_answer": 0,
-    "safety_violations": 0,
-    "unrealistic_tools": 0,
-    "overcomplicated_solution": 0,
-    "missing_context": 0,
-    "poor_quality_tips": 0
-}]
+[
+    {
+        "question": "Why isn't my garbage disposal working?",
+        "answer": "Most likely jammed or the reset button needs to be pressed.",
+        "equipment_problem": "Garbage disposal motor is humming or completely dead.",
+        "tools_required": [
+            "Garbage disposal wrench",
+            "Flashlight",
+            "Pliers",
+            "Screwdriver"
+        ],
+        "steps": [
+            "Turn off power at the breaker",
+            "Check for obstructions in the disposal chamber.",
+            "Use the wrench to manually rotate the motor shaft.",
+            "Press the reset button on the bottom of the unit.",
+            "Turn the breaker back on and test the disposal."
+        ],
+        "safety_info": "Always turn off the power at the breaker before working on the garbage disposal. Wear safety glasses.",
+        "tips": "Run cold water while operating the disposal. Avoid putting hard items down the disposal.",
+        "category": "appliance_repair",
+        "incomplete_answer": 1,
+        "safety_violations": 0,
+        "unrealistic_tools": 0,
+        "overcomplicated_solution": 0,
+        "missing_context": 0,
+        "poor_quality_tips": 0
+    },
+    {
+        "question": "How do I unclog a slow-draining sink?",
+        "answer": "Often a hair clog in the P-trap. Can be cleared with a plunger or by cleaning the P-trap.",
+        "equipment_problem": "Sink draining slowly or not at all.",
+        "tools_required": [
+            "Plunger",
+            "Bucket",
+            "Adjustable wrench",
+            "Pliers",
+            "Drain snake (optional)"
+        ],
+        "steps": [
+            "Place a bucket under the P-trap.",
+            "Loosen the slip nuts on the P-trap and remove it.",
+            "Clean out any debris in the P-trap.",
+            "Reassemble the P-trap.",
+            "If the clog persists, use a drain snake to clear the drainpipe."
+        ],
+        "safety_info": "Wear gloves to protect your hands. Be careful when handling drain cleaner.",
+        "tips": "Avoid pouring grease down the drain.",
+        "category": "plumbing_repair",
+        "incomplete_answer": 1,
+        "safety_violations": 0,
+        "unrealistic_tools": 0,
+        "overcomplicated_solution": 0,
+        "missing_context": 0,
+        "poor_quality_tips": 0
+    },
+    {
+        "question": "A light switch isn't working. What do I do?",
+        "answer": "Could be a loose wire, a faulty switch, or a tripped breaker.",
+        "equipment_problem": "Light switch does not turn the light on or off.",
+        "tools_required": [
+            "Screwdriver",
+            "Voltage tester",
+            "Wire strippers",
+            "Wire connectors",
+            "New light switch (if necessary)"
+        ],
+        "steps": [
+            "Turn off the power at the breaker.",
+            "Remove the light switch cover plate.",
+            "Use a voltage tester to ensure the power is off.",
+            "Disconnect the wires from the old switch.",
+            "Connect the wires to the new switch, matching the wiring configuration.",
+            "Reinstall the switch and cover plate.",
+            "Turn the breaker back on and test the switch."
+        ],
+        "safety_info": "Always turn off the power at the breaker before working on electrical components. Use a voltage tester to verify the power is off.",
+        "tips": "Take a picture of the wiring before disconnecting the old switch.",
+        "category": "electrical_repair",
+        "incomplete_answer": 1,
+        "safety_violations": 0,
+        "unrealistic_tools": 1,
+        "overcomplicated_solution": 1,
+        "missing_context": 0,
+        "poor_quality_tips": 0
+    },
+    {
+        "question": "How often should I change my furnace filter?",
+        "answer": "Every 1-3 months, depending on usage and filter type.",
+        "equipment_problem": "Reduced airflow from vents, increased energy bills.",
+        "tools_required": [
+            "New furnace filter"
+        ],
+        "steps": [
+            "Locate the furnace filter compartment.",
+            "Remove the old filter.",
+            "Insert the new filter, making sure the arrow indicates the direction of airflow.",
+            "Close the filter compartment."
+        ],
+        "safety_info": "Turn off the furnace before changing the filter.",
+        "tips": "Mark the date on the filter when you change it to keep track.",
+        "category": "hvac_maintenance",
+        "incomplete_answer": 0,
+        "safety_violations": 0,
+        "unrealistic_tools": 0,
+        "overcomplicated_solution": 0,
+        "missing_context": 0,
+        "poor_quality_tips": 0
+    },
+    {
+        "question": "How do I fix a hole in drywall?",
+        "answer": "Patch it with drywall compound or a patch kit.",
+        "equipment_problem": "Hole or crack in drywall.",
+        "tools_required": [
+            "Utility knife",
+            "Drywall knife",
+            "Drywall compound",
+            "Sandpaper",
+            "Primer",
+            "Paint",
+            "Drywall patch (optional)"
+        ],
+        "steps": [
+            "Clean the area around the hole.",
+            "If necessary, apply a drywall patch.",
+            "Apply drywall compound to the hole, feathering the edges.",
+            "Let the compound dry completely.",
+            "Sand the area smooth.",
+            "Prime the area.",
+            "Paint the area to match the surrounding wall."
+        ],
+        "safety_info": "Wear a dust mask when sanding.",
+        "tips": "Apply multiple thin coats of drywall compound for best results.",
+        "category": "general_home_repair",
+        "incomplete_answer": 1,
+        "safety_violations": 0,
+        "unrealistic_tools": 0,
+        "overcomplicated_solution": 0,
+        "missing_context": 0,
+        "poor_quality_tips": 0
+    },
+    {
+        "question": "My toilet is constantly running. What's the problem?",
+        "answer": "Most likely a faulty flapper or fill valve.",
+        "equipment_problem": "Toilet running constantly.",
+        "tools_required": [
+            "Adjustable wrench",
+            "Screwdriver",
+            "New flapper or fill valve (if necessary)"
+        ],
+        "steps": [
+            "Turn off the water supply to the toilet.",
+            "Inspect the flapper for damage or debris.",
+            "Replace the flapper if necessary.",
+            "If the flapper is not the problem, inspect the fill valve.",
+            "Replace the fill valve if necessary.",
+            "Turn the water supply back on and test the toilet."
+        ],
+        "safety_info": "Be careful not to overtighten connections.",
+        "tips": "Flush the toilet several times after making repairs to ensure proper operation.",
+        "category": "plumbing_repair",
+        "incomplete_answer": 1,
+        "safety_violations": 0,
+        "unrealistic_tools": 0,
+        "overcomplicated_solution": 0,
+        "missing_context": 0,
+        "poor_quality_tips": 0
+    },
+    {
+        "question": "Why are my outlets not working in one room?",
+        "answer": "Probably a tripped circuit breaker or a faulty GFCI outlet.",
+        "equipment_problem": "Outlets not providing power.",
+        "tools_required": [
+            "Voltage tester",
+            "Screwdriver",
+            "GFCI tester"
+        ],
+        "steps": [
+            "Check the circuit breaker panel for a tripped breaker. Reset the breaker if necessary.",
+            "Check for a GFCI outlet in the room or nearby. Press the reset button on the GFCI outlet.",
+            "If neither of those work, test the outlets with a voltage tester. If there's no power, call an electrician."
+        ],
+        "safety_info": "Always turn off the power at the breaker before working on electrical components. Use a voltage tester to verify the power is off.",
+        "tips": "A GFCI outlet often protects multiple outlets in a room.",
+        "category": "electrical_repair",
+        "incomplete_answer": 1,
+        "safety_violations": 0,
+        "unrealistic_tools": 1,
+        "overcomplicated_solution": 0,
+        "missing_context": 0,
+        "poor_quality_tips": 0
+    },
+    {
+        "question": "My refrigerator is not cooling properly. What could be wrong?",
+        "answer": "Dirty condenser coils, a faulty door seal, or a malfunctioning thermostat.",
+        "equipment_problem": "Refrigerator not maintaining a cold temperature.",
+        "tools_required": [
+            "Vacuum cleaner with brush attachment",
+            "Screwdriver",
+            "Ohm meter (optional)"
+        ],
+        "steps": [
+            "Clean the condenser coils (usually located on the back or bottom of the refrigerator).",
+            "Check the door seal for damage or gaps.",
+            "Test the thermostat with an ohm meter (if comfortable).",
+            "If none of these work, consult a professional.",
+            "Ensure nothing is blocking the vents inside the refrigerator."
+        ],
+        "safety_info": "Unplug the refrigerator before cleaning the condenser coils.",
+        "tips": "Clean the condenser coils every 6 months.",
+        "category": "appliance_repair",
+        "incomplete_answer": 1,
+        "safety_violations": 0,
+        "unrealistic_tools": 1,
+        "overcomplicated_solution": 1,
+        "missing_context": 0,
+        "poor_quality_tips": 0
+    },
+    {
+        "question": "How do I seal gaps around windows and doors?",
+        "answer": "Use caulk or weather stripping.",
+        "equipment_problem": "Drafts coming in around windows and doors.",
+        "tools_required": [
+            "Caulk gun",
+            "Caulk",
+            "Utility knife",
+            "Weather stripping"
+        ],
+        "steps": [
+            "Clean the area around the window or door frame.",
+            "Apply caulk to gaps and cracks.",
+            "Smooth the caulk with your finger or a tool.",
+            "Apply weather stripping to the edges of the door or window frame.",
+            "Ensure proper seal, no gaps."
+        ],
+        "safety_info": "Work in a well-ventilated area when using caulk.",
+        "tips": "Choose the right type of caulk for the job (e.g., exterior vs. interior).",
+        "category": "general_home_repair",
+        "incomplete_answer": 0,
+        "safety_violations": 0,
+        "unrealistic_tools": 0,
+        "overcomplicated_solution": 0,
+        "missing_context": 0,
+        "poor_quality_tips": 0
+    },
+    {
+        "question": "How can I improve my home's energy efficiency?",
+        "answer": "Insulate properly, seal air leaks, and use energy-efficient appliances.",
+        "equipment_problem": "High energy bills.",
+        "tools_required": [
+            "Caulk gun",
+            "Weather stripping",
+            "Insulation",
+            "Energy audit tools (optional)"
+        ],
+        "steps": [
+            "Insulate walls, attics, and crawl spaces.",
+            "Seal air leaks around windows and doors.",
+            "Upgrade to energy-efficient appliances.",
+            "Install a programmable thermostat.",
+            "Consider an energy audit to identify areas for improvement."
+        ],
+        "safety_info": "Wear protective gear when handling insulation.",
+        "tips": "Take advantage of energy efficiency rebates and incentives.",
+        "category": "hvac_maintenance",
+        "incomplete_answer": 1,
+        "safety_violations": 0,
+        "unrealistic_tools": 0,
+        "overcomplicated_solution": 0,
+        "missing_context": 0,
+        "poor_quality_tips": 0
+    },
+    {
+        "question": "My ceiling fan is wobbly. How can I fix it?",
+        "answer": "Tighten screws, balance the blades, and ensure the mounting bracket is secure.",
+        "equipment_problem": "Ceiling fan wobbling or shaking.",
+        "tools_required": [
+            "Screwdriver",
+            "Ladder",
+            "Balancing kit"
+        ],
+        "steps": [
+            "Turn off the power at the breaker.",
+            "Tighten all screws on the fan blades and the mounting bracket.",
+            "Use a balancing kit to balance the fan blades.",
+            "If the problem persists, check the mounting bracket for stability. Ensure it's screwed into a structural piece of the ceiling."
+        ],
+        "safety_info": "Make sure the power is off before working on the fan. Use a sturdy ladder.",
+        "tips": "Use a fan blade balancing kit for precise balancing.",
+        "category": "general_home_repair",
+        "incomplete_answer": 0,
+        "safety_violations": 0,
+        "unrealistic_tools": 0,
+        "overcomplicated_solution": 0,
+        "missing_context": 0,
+        "poor_quality_tips": 0
+    },
+    {
+        "question": "My washing machine is leaking. What should I check first?",
+        "answer": "Check the hoses and connections for leaks or damage.",
+        "equipment_problem": "Water leaking from washing machine during operation.",
+        "tools_required": [
+            "Pliers",
+            "Adjustable wrench",
+            "Bucket",
+            "New hoses (if needed)"
+        ],
+        "steps": [
+            "Turn off the water supply to the washing machine.",
+            "Check the hoses for cracks or leaks.",
+            "Tighten the hose connections.",
+            "If the hoses are damaged, replace them.",
+            "Inspect the drain hose for clogs or kinks.",
+            "Check the door seal for damage."
+        ],
+        "safety_info": "Disconnect the power to the washing machine before performing any repairs.",
+        "tips": "Replace washing machine hoses every 5 years.",
+        "category": "appliance_repair",
+        "incomplete_answer": 1,
+        "safety_violations": 0,
+        "unrealistic_tools": 0,
+        "overcomplicated_solution": 0,
+        "missing_context": 0,
+        "poor_quality_tips": 0
+    },
+    {
+        "question": "How do I fix a leaky faucet?",
+        "answer": "Often caused by worn-out washers or O-rings.",
+        "equipment_problem": "Faucet dripping water even when turned off.",
+        "tools_required": [
+            "Adjustable wrench",
+            "Screwdriver",
+            "Pliers",
+            "New washers and O-rings"
+        ],
+        "steps": [
+            "Turn off the water supply to the faucet.",
+            "Disassemble the faucet.",
+            "Identify the worn-out washers or O-rings.",
+            "Replace the worn parts.",
+            "Reassemble the faucet.",
+            "Turn the water supply back on and test the faucet."
+        ],
+        "safety_info": "Be careful not to scratch the faucet finish when using tools.",
+        "tips": "Take a picture of the faucet before disassembling it for easy reassembly.",
+        "category": "plumbing_repair",
+        "incomplete_answer": 1,
+        "safety_violations": 0,
+        "unrealistic_tools": 0,
+        "overcomplicated_solution": 0,
+        "missing_context": 0,
+        "poor_quality_tips": 0
+    },
+    {
+        "question": "How do I install a new light fixture?",
+        "answer": "Turn off the power, connect the wires correctly, and secure the fixture.",
+        "equipment_problem": "Replacing an old light fixture with a new one.",
+        "tools_required": [
+            "Screwdriver",
+            "Wire strippers",
+            "Wire connectors",
+            "Voltage tester",
+            "New light fixture"
+        ],
+        "steps": [
+            "Turn off the power at the breaker.",
+            "Remove the old light fixture.",
+            "Use a voltage tester to ensure the power is off.",
+            "Connect the wires from the new fixture to the wires in the ceiling box, matching the wiring configuration.",
+            "Secure the new fixture to the ceiling box.",
+            "Turn the breaker back on and test the fixture."
+        ],
+        "safety_info": "Always turn off the power at the breaker before working on electrical components. Use a voltage tester to verify the power is off.",
+        "tips": "Make sure the ceiling box is rated to support the weight of the new fixture.",
+        "category": "electrical_repair",
+        "incomplete_answer": 1,
+        "safety_violations": 0,
+        "unrealistic_tools": 1,
+        "overcomplicated_solution": 1,
+        "missing_context": 0,
+        "poor_quality_tips": 0
+    },
+    {
+        "question": "How do I clean window air conditioning unit coils?",
+        "answer": "Remove the front cover, vacuum the coils, and straighten bent fins.",
+        "equipment_problem": "Reduced cooling performance from air conditioner.",
+        "tools_required": [
+            "Screwdriver",
+            "Vacuum cleaner with brush attachment",
+            "Fin comb (optional)"
+        ],
+        "steps": [
+            "Unplug the air conditioner.",
+            "Remove the front cover.",
+            "Vacuum the coils to remove dust and debris.",
+            "Use a fin comb to straighten any bent fins.",
+            "Reassemble the air conditioner.",
+            "Allow coils to completely dry before plugging back in."
+        ],
+        "safety_info": "Unplug the air conditioner before cleaning.",
+        "tips": "Clean the coils at least once a year.",
+        "category": "hvac_maintenance",
+        "incomplete_answer": 0,
+        "safety_violations": 0,
+        "unrealistic_tools": 0,
+        "overcomplicated_solution": 0,
+        "missing_context": 0,
+        "poor_quality_tips": 0
+    },
+    {
+        "question": "How to fix a squeaky door hinge?",
+        "answer": "Apply lubricant such as WD-40 or petroleum jelly to the hinge.",
+        "equipment_problem": "Door hinge squeaking when opening or closing the door.",
+        "tools_required": [
+            "Lubricant (WD-40, petroleum jelly, or silicone spray)",
+            "Cloth or paper towel"
+        ],
+        "steps": [
+            "Open and close the door to identify the squeaky hinge.",
+            "Apply lubricant to the hinge pin and between the hinge leaves.",
+            "Work the door back and forth to distribute the lubricant.",
+            "Wipe off any excess lubricant.",
+            "If squeak persists, try removing the hinge pin and applying lubricant directly to it before reinserting it."
+        ],
+        "safety_info": "Avoid getting lubricant on the floor, as it can be slippery.",
+        "tips": "Use a lubricant with a Teflon additive for longer-lasting results.",
+        "category": "general_home_repair",
+        "incomplete_answer": 0,
+        "safety_violations": 0,
+        "unrealistic_tools": 0,
+        "overcomplicated_solution": 0,
+        "missing_context": 0,
+        "poor_quality_tips": 0
+    },
+    {
+        "question": "My oven isn't heating up. What could be the issue?",
+        "answer": "Could be a faulty heating element, igniter (gas oven), or thermostat.",
+        "equipment_problem": "Oven not reaching the set temperature.",
+        "tools_required": [
+            "Screwdriver",
+            "Multimeter",
+            "Ohm meter (optional)",
+            "Replacement heating element or igniter (if necessary)"
+        ],
+        "steps": [
+            "Check the heating element for visible damage.",
+            "Test the heating element with a multimeter to check for continuity.",
+            "If it's a gas oven, check the igniter to see if it's glowing during startup.",
+            "If not glowing, test the igniter with a multimeter.",
+            "Check the thermostat for proper function (more complex, may require professional assistance)."
+        ],
+        "safety_info": "Unplug the oven before performing any repairs. Disconnect the gas supply if working on a gas oven.",
+        "tips": "Consult a repair manual or online resources for specific instructions for your oven model.",
+        "category": "appliance_repair",
+        "incomplete_answer": 1,
+        "safety_violations": 0,
+        "unrealistic_tools": 1,
+        "overcomplicated_solution": 1,
+        "missing_context": 0,
+        "poor_quality_tips": 0
+    },
+    {
+        "question": "How do I thaw frozen pipes?",
+        "answer": "Use a hair dryer or heat lamp, starting near the faucet and working back toward the frozen area.",
+        "equipment_problem": "Frozen pipes, resulting in no water flow.",
+        "tools_required": [
+            "Hair dryer or heat lamp",
+            "Towels or rags"
+        ],
+        "steps": [
+            "Open the faucet to allow water to flow as the ice melts.",
+            "Apply heat to the pipe, starting near the faucet and working back toward the frozen area.",
+            "Continue applying heat until water flows freely.",
+            "Wrap the pipes with insulation to prevent future freezing.",
+            "Monitor for leaks after thawing."
+        ],
+        "safety_info": "Never use an open flame to thaw pipes. Be careful not to overheat the pipes, which could cause them to burst.",
+        "tips": "Keep the faucet open slightly during extremely cold weather to prevent freezing.",
+        "category": "plumbing_repair",
+        "incomplete_answer": 0,
+        "safety_violations": 0,
+        "unrealistic_tools": 0,
+        "overcomplicated_solution": 0,
+        "missing_context": 0,
+        "poor_quality_tips": 0
+    },
+    {
+        "question": "Why is one of my wall outlets warm to the touch?",
+        "answer": "Could be a loose connection or overloaded circuit.",
+        "equipment_problem": "Wall outlet feels warm or hot to the touch.",
+        "tools_required": [
+            "Screwdriver",
+            "Voltage tester",
+            "Wire strippers",
+            "Wire connectors"
+        ],
+        "steps": [
+            "Turn off the power at the breaker.",
+            "Remove the outlet cover plate.",
+            "Use a voltage tester to ensure the power is off.",
+            "Inspect the wiring connections for looseness or damage.",
+            "Tighten or replace any loose or damaged connections.",
+            "Check the wiring for any signs of overheating.",
+            "Reinstall the outlet and cover plate.",
+            "Turn the breaker back on and test the outlet.",
+            "If the problem persists, call an electrician."
+        ],
+        "safety_info": "Always turn off the power at the breaker before working on electrical components. Use a voltage tester to verify the power is off. If you're not comfortable working with electricity, call an electrician.",
+        "tips": "Avoid overloading circuits by plugging too many devices into one outlet or circuit.",
+        "category": "electrical_repair",
+        "incomplete_answer": 1,
+        "safety_violations": 0,
+        "unrealistic_tools": 1,
+        "overcomplicated_solution": 1,
+        "missing_context": 0,
+        "poor_quality_tips": 0
+    },
+    {
+        "question": "How can I clean my window A/C filter?",
+        "answer": "Remove the filter, vacuum it, and wash it with mild soap and water.",
+        "equipment_problem": "Reduced airflow from window AC unit.",
+        "tools_required": [
+            "Vacuum cleaner with brush attachment",
+            "Mild soap",
+            "Water",
+            "Soft brush (optional)"
+        ],
+        "steps": [
+            "Turn off and unplug the air conditioner.",
+            "Remove the filter from the unit.",
+            "Vacuum the filter to remove loose dust and debris.",
+            "Wash the filter with mild soap and water.",
+            "Rinse the filter thoroughly.",
+            "Allow the filter to dry completely before reinstalling it.",
+            "Plug the unit back in."
+        ],
+        "safety_info": "Ensure the filter is completely dry before reinstalling it.",
+        "tips": "Clean the filter every 2-4 weeks during periods of heavy use.",
+        "category": "hvac_maintenance",
+        "incomplete_answer": 0,
+        "safety_violations": 0,
+        "unrealistic_tools": 0,
+        "overcomplicated_solution": 0,
+        "missing_context": 0,
+        "poor_quality_tips": 0
+    }
+]
