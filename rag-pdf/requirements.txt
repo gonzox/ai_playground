@@ -1,0 +1,11 @@
+pdf2image
+PyMuPDF
+pytesseract
+sentence-transformers
+faiss-cpu
+google-generativeai
+openai
+lancedb
+pandas
+ragas
+datasets
